@@ -1,0 +1,84 @@
+.header--main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header__top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  background-color: @red;
+}
+
+.header__bottom,
+.header__top .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__phone {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  
+  span {
+    margin-right: 35px;
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.header__app {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  
+  img {
+    display: block;
+  }
+  
+  &:hover,
+  &:active {
+    background-image: url(../img/images/app-red.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    img {
+      display: none;
+    }
+  }
+}
+
+.header__btn {
+  width: 255px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    background-color: #fff;
+    .transition();
+  }
+}
+
+.header__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

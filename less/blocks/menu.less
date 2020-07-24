@@ -1,0 +1,52 @@
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.menu__item {
+  position: relative;
+  margin-left: 40px;
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 29px;
+    height: 1px;
+    background-color: @red;
+  }
+  
+  &:hover,
+  &:active {
+    .menu__link {
+      color: @blue;
+      .transition();
+    }
+  }
+  
+  &--active {
+    .menu__link {
+      color: @blue;
+    }
+    
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.menu__link {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  .transition();
+}
