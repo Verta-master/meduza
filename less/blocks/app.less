@@ -1,0 +1,49 @@
+.app__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__info {
+  width: 53%;
+}
+
+.app__img {
+  width: 43%;
+}
+
+.app__title {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #333;
+  font-size: 40px;
+  line-height: 1.2;
+  
+  b {
+    font-size: 41px;
+    font-weight: 700;
+  }
+}
+
+.app__list {
+  .reset();
+  padding-left: 30px;
+  list-style: none;
+  color: #333;
+  
+  li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 25px;
+    
+    &::before {
+      content: "\2015";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.app__link {
+  
+}
