@@ -16,7 +16,7 @@
     <div class="header__top">
       <div class="wrapper">
         <div class="header__phone"><span>Круглосуточно</span><a href="tel:+74959790374">8(495) 979-03-74</a></div>
-        <a href="#" class="header__btn">Вызвать скорую помощь</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="header__btn">Вызвать скорую помощь</a>
         <a href="#" class="header__btn">Задать вопрос</a>
         <a href="#" class="header__app">
           <img src="img/images/app.png" alt="App Store">
@@ -254,6 +254,17 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Вызвать скорую помощь</p>
+    <form action="#" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Имя">
+      <input type="tel" class="modal__input" placeholder="Телефон">
+      <input type="text" class="modal__input" placeholder="Адрес">
+      <button type="submit" class="btn modal__btn">Отправить</button>
+    </form>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
