@@ -780,6 +780,7 @@ h2,
 .btn {
   width: 269px;
   height: 67px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -993,4 +994,124 @@ h2,
 }
 .review__next {
   right: 50px;
+}
+.footer {
+  color: #333;
+  font-size: 16px;
+  background-color: #ecf6f9;
+}
+.footer .social {
+  margin-top: 15px;
+}
+.footer__top,
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__top {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer__bottom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 30px;
+  color: #555;
+  border-top: 1px solid #aeaeae;
+}
+.footer__text span {
+  display: block;
+}
+.footer__text a {
+  text-decoration: underline;
+}
+.footer__text a:hover,
+.footer__text a:active {
+  text-decoration: none;
+}
+.footer__payment {
+  line-height: 1.2;
+}
+.footer__payment i {
+  margin-left: 20px;
+  font-size: 32px;
+}
+.footer__payment span,
+.footer__payment i {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.footer__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__menu li {
+  margin-bottom: 10px;
+}
+.footer__block a:hover,
+.footer__block a:active {
+  color: #00a7e7;
+}
+.footer__phone {
+  display: block;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #036f98;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__phone:hover,
+.footer__phone:active {
+  color: #00a7e7;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__btn {
+  margin-top: 30px;
+  height: 44px;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social__item {
+  margin-right: 20px;
+}
+.social__link {
+  display: block;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #555555;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__link:hover,
+.social__link:active {
+  color: #00a7e7;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
