@@ -10,3 +10,274 @@
     margin-right: 0;
   }
 }
+
+//------------------------------------------
+@media (max-width: 1200px) {
+  .header__phone {
+    span {
+      display: none;
+    }
+  }
+  .menu__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    
+    &--close {
+      background-image: url(../img/icons/cross.svg);
+      background-size: 25px 25px;
+    }
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    padding: 15px;
+    background-color: rgba(255,255,255,1);
+  }
+  .menu__item {
+    margin-left: 0;
+    
+    &::after {
+      display: none !important;
+    }
+  }
+  .menu__link {
+    display: block;
+    padding: 10px 0;
+  }
+  .promo__link {
+    padding: 20px;
+  }
+  .app__title b,
+  .app__title {
+    font-size: 30px;
+  }
+  .app {
+    padding-bottom: 20px;
+  }
+  .app__title {
+    margin-bottom: 40px;
+  }
+  .app__list li {
+    margin-bottom: 15px;
+  }
+}
+
+//------------------------------------------
+@media (max-width: 1022px) {
+  .header__phone a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    font-size: 0;
+    background-image: url(../img/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    
+    &:hover,
+    &:active {
+      background-color: #fff;
+      background-image: url(../img/icons/phone-red.svg);
+    }
+  }
+  .header__btn--call {
+    width: 40px;
+    font-size: 0;
+    background-image: url(../img/icons/call.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+    
+    &:hover,
+    &:active {
+      background-color: #fff;
+      background-image: url(../img/icons/call-red.svg);
+    }
+  }
+  .header__btn--ask {
+    width: 40px;
+    position: relative;
+    font-size: 0;
+    
+    &::after {
+      content: "?";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-size: 25px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    
+    &:hover,
+    &:active {
+      background-color: #fff;
+      
+      &::after {
+        color: @red;
+      }
+    }
+  }
+  .header__top {
+    justify-content: center;
+  }
+  .header__phone,
+  .header__btn,
+  .header__app {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .promo__link {
+    padding: 20px 12px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .app__wrap {
+    align-items: center;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  .footer__block {
+    width: 50%;
+  }
+  .footer__block--call {
+    order: 1;
+    margin-bottom: 40px;
+  }
+  .footer__block--contacts {
+    order: 2;
+    margin-bottom: 40px;
+  }
+  .footer__block--info {
+    order: 3;
+  }
+  .footer__block--service {
+    order: 4;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__title--list {
+    position: relative;
+    cursor: pointer;
+      
+    &::before {
+      content: "\f107";
+      position: absolute;
+      top: 0;
+      right: 20px;
+      font-family: "Font Awesome 5 Free";
+      color: #333;
+    }
+  }
+}
+
+//------------------------------------------
+@media (max-width: 766px) {
+  .app__info,
+  .footer__block {
+    width: 100%;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .app__wrap {
+    display: block;
+  }
+  .app__img {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+    
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .app {
+    padding-bottom: 0;
+  }
+  .promo__title {
+    font-size: 36px;
+  }
+  .promo__links {
+    flex-direction: column;
+  }
+  .promo__link {
+    border-radius: 37px !important;
+  }
+}
+
+//------------------------------------------
+@media (max-width: 480px) {
+  .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 3px;
+  }
+  .logo__text img {
+    width: 120px;
+    height: auto;
+    margin-right: 0;
+  }
+  .logo strong {
+    font-size: 10px;
+  }
+  .header__app,
+  .header__btn,
+  .header__phone {
+    margin: 0;
+  }
+  .header__top {
+    justify-content: space-around;
+  }
+  .promo__title {
+    font-size: 30px;
+  }
+  .review__next,
+  .review__prev {
+    top: -60px;
+  }
+  .review__prev {
+    left: ~"calc(50% - 50px)";
+    right: auto;
+  }
+  .review__next {
+    right: ~"calc(50% - 50px)";
+  }
+  .review__wrap {
+    margin-top: 80px;
+    padding: 20px;
+  }
+  .footer__text {
+    width: 100%;
+    
+    a, 
+    span {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .menu__list {
+    left: 0;
+  }
+  .modal {
+    padding: 30px;
+  }
+}

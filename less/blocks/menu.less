@@ -1,3 +1,17 @@
+.menu {
+  position: relative;
+  margin-top: 60px;
+  
+  &--main {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin-top: 0;
+  }
+}
+
 .menu__btn {
   display: none;
 }
@@ -15,20 +29,27 @@
   margin-left: 40px;
   
   &::after {
-    display: none;
     content: "";
     position: absolute;
     left: 0;
     bottom: -10px;
-    width: 29px;
+    width: 0;
     height: 1px;
     background-color: @red;
+    opacity: 0;
+    .transition();
   }
   
   &:hover,
   &:active {
     .menu__link {
       color: @blue;
+      .transition();
+    }
+    
+    &::after {
+      width: 29px;
+      opacity: 1;
       .transition();
     }
   }
@@ -39,7 +60,8 @@
     }
     
     &::after {
-      display: block;
+      width: 29px;
+      opacity: 1;
     }
   }
 }

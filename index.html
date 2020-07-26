@@ -12,17 +12,17 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header header--main">
-    <div class="header__top">
-      <div class="wrapper">
-        <div class="header__phone"><span>Круглосуточно</span><a href="tel:+74959790374">8(495) 979-03-74</a></div>
-        <a data-fancybox data-src="#call" href="javascript:;" class="header__btn">Вызвать скорую помощь</a>
-        <a href="#" class="header__btn">Задать вопрос</a>
-        <a href="#" class="header__app">
-          <img src="img/images/app.png" alt="App Store">
-        </a>
-      </div>
+  <header class="header">
+    <div class="wrapper header__top">
+      <div class="header__phone"><span>Круглосуточно</span><a href="tel:+74959790374">8(495) 979-03-74</a></div>
+      <a data-fancybox data-src="#call" href="javascript:;" class="header__btn header__btn--call">Вызвать скорую помощь</a>
+      <a href="#" class="header__btn header__btn--ask">Задать вопрос</a>
+      <a href="#" class="header__app">
+        <img src="img/images/app.png" alt="App Store">
+      </a>
     </div>
+  </header>
+  <nav class="menu menu--main">
     <div class="wrapper header__bottom">
       <div class="logo">
         <img src="img/images/logo.png" alt="Медуза">
@@ -31,25 +31,23 @@
           <strong>Медицинские услуги<br>по заявке</strong>
         </div>
       </div>
-      <nav class="menu">
-        <button type="button" class="menu__btn"></button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">О службе</a>
-          </li>
-          <li class="menu__item menu__item--active">
-            <a href="#" class="menu__link">Услуги платной скорой помощи</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Цены</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <button type="button" class="menu__btn"></button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О службе</a>
+        </li>
+        <li class="menu__item menu__item--active">
+          <a href="#" class="menu__link">Услуги платной скорой помощи</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Цены</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
   
   <main>
     <section class="promo">
@@ -96,7 +94,9 @@
           <div class="app__info">
             <div class="logo">
               <img src="img/images/logo.png" alt="Медуза">
-              <img src="img/images/logo-name.png" alt="Медуза">
+              <div class="logo__text">
+                <img src="img/images/logo-name.png" alt="Медуза">
+              </div>
             </div>
             <p class="app__title"><b>Полный перечень услуг и энциклопедия первой помощи</b> в нашем мобильном приложении</p>
             <ul class="app__list">
@@ -120,40 +120,40 @@
         <h2 class="title-2">Наши услуги</h2>
         <ul class="service__list">
           <li class="service__item">
-            <a href="#" class="service__link">СКОРАЯ МЕДИЦИНСКАЯ ПОМОЩЬ</a>
+            <a href="#" class="service__link"><span>СКОРАЯ МЕДИЦИНСКАЯ ПОМОЩЬ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">СКОРАЯ ПОМОЩЬ ДЛЯ<br>БЕРЕМЕННЫХ</a>
+            <a href="#" class="service__link"><span>СКОРАЯ ПОМОЩЬ ДЛЯ<br>БЕРЕМЕННЫХ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">ДЕЖУРСТВО<br>НА МЕРОПРИЯТИЯХ</a>
+            <a href="#" class="service__link"><span>ДЕЖУРСТВО<br>НА МЕРОПРИЯТИЯХ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">АВИАПЕРЕВОЗКА БОЛЬНЫХ</a>
+            <a href="#" class="service__link"><span>АВИАПЕРЕВОЗКА БОЛЬНЫХ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">СКОРАЯ РЕАНИМАЦИЯ</a>
+            <a href="#" class="service__link"><span>СКОРАЯ РЕАНИМАЦИЯ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">ДЕТСКАЯ НЕОТЛОЖКА</a>
+            <a href="#" class="service__link"><span>ДЕТСКАЯ НЕОТЛОЖКА</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">ПЕРЕВОЗКА БОЛЬНЫХ</a>
+            <a href="#" class="service__link"><span>ПЕРЕВОЗКА БОЛЬНЫХ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">ПЕРЕВЯЗКИ<br>НА ДОМУ</a>
+            <a href="#" class="service__link"><span>ПЕРЕВЯЗКИ<br>НА ДОМУ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">КАПЕЛЬНИЦА<br>НА ДОМУ</a>
+            <a href="#" class="service__link"><span>КАПЕЛЬНИЦА<br>НА ДОМУ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">ПРИВИВКА<br>ОТ ГРИППА</a>
+            <a href="#" class="service__link"><span>ПРИВИВКА<br>ОТ ГРИППА</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">ЭКГ НА ДОМУ</a>
+            <a href="#" class="service__link"><span>ЭКГ НА ДОМУ</span></a>
           </li>
           <li class="service__item">
-            <a href="#" class="service__link">ГОСПИТАЛИЗАЦИЯ</a>
+            <a href="#" class="service__link"><span>ГОСПИТАЛИЗАЦИЯ</span></a>
           </li>
         </ul>
         <p>При резком ухудшении самочувствия необходима экстренная помощь врачей. Служба платной скорой «СуперМедик» быстро выезжает на место для оказания квалифицированной и своевременной медицинской помощи – взрослым, детям, беременным женщинам.</p>
@@ -193,7 +193,7 @@
     <div class="wrapper">
       <div class="footer__top">
         <div class="footer__block footer__block--info">
-          <p class="footer__title">Информация</p>
+          <p class="footer__title footer__title--list">Информация</p>
           <ul class="footer__menu">
             <li><a href="#">О нас</a></li>
             <li><a href="#">Цены</a></li>
@@ -204,7 +204,7 @@
           </ul>
         </div>
         <div class="footer__block footer__block--service">
-          <p class="footer__title">УСЛУГИ</p>
+          <p class="footer__title footer__title--list">УСЛУГИ</p>
           <ul class="footer__menu">
             <li><a href="#">Услуги платной скорой помощи</a></li>
             <li><a href="#">Перевозка лежачих больных</a></li>
@@ -267,6 +267,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   
