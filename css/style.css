@@ -1254,11 +1254,17 @@ h2,
   height: 80px;
 }
 .info {
+  padding-top: 30px;
   color: #333;
   text-align: justify;
 }
+.info p {
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
 .info table {
   width: 100%;
+  margin-top: 50px;
   margin-bottom: 20px;
   border-collapse: collapse;
   vertical-align: middle;
@@ -1292,7 +1298,7 @@ h2,
 }
 .info table td:nth-child(2),
 .info table td:last-child {
-  padding: 20px;
+  padding: 11px 20px;
 }
 .info table tr:last-child td {
   border-bottom: 0;
@@ -1304,12 +1310,19 @@ h2,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
 }
 .info__img {
   width: 43%;
 }
 .info__text {
   width: 51%;
+}
+.info__list {
+  margin-top: 50px;
 }
 .info__benefits {
   margin: 0;
@@ -1321,14 +1334,35 @@ h2,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 65px;
 }
 .info__item {
   width: 30%;
   text-align: center;
 }
+.info__item p {
+  margin: 0;
+}
 .info__pic {
+  width: 100%;
   height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
+}
+.info__pic img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .info__table {
   margin-bottom: 100px;
@@ -1347,6 +1381,7 @@ h2,
 }
 .info__table p i {
   font-style: normal;
+  max-width: 100%;
 }
 .info__table p span {
   margin-left: 5px;
@@ -1356,15 +1391,18 @@ h2,
           flex-grow: 1;
   border-bottom: 2px dotted #333;
 }
+.info__table p b {
+  max-width: 100%;
+}
 blockquote {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 65px;
-  margin-bottom: 90px;
-  padding: 10px;
+  margin-top: 70px;
+  margin-bottom: 95px;
+  padding: 22px 15px;
   color: #333;
-  font-weight: 700;
+  text-align: left;
   border: 1px solid #00a7e7;
 }
 .quote-link,
@@ -1373,9 +1411,11 @@ blockquote {
   padding: 0 40px;
   font-size: 30px;
   line-height: 1;
+  font-weight: 700;
   text-transform: uppercase;
   color: #00a7e7;
   background-color: #fff;
+  white-space: nowrap;
 }
 .quote-title {
   position: absolute;
@@ -1587,6 +1627,20 @@ blockquote {
     font-family: "Font Awesome 5 Free";
     color: #333;
   }
+  .info__benefits,
+  .info__wrap {
+    display: block;
+  }
+  .info__img {
+    width: auto;
+  }
+  .info__item,
+  .info__text {
+    width: 100%;
+  }
+  .info__item {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 766px) {
   .app__info,
@@ -1626,6 +1680,34 @@ blockquote {
   }
   .promo__link {
     border-radius: 37px !important;
+  }
+  .info {
+    text-align: left;
+  }
+  .quote-title {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .info__table p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .info__table p span {
+    display: none;
+  }
+  .info__equipment {
+    overflow-x: scroll;
+  }
+  .info table {
+    width: 730px;
   }
 }
 @media (max-width: 480px) {
@@ -1683,5 +1765,9 @@ blockquote {
   }
   .modal {
     padding: 30px;
+  }
+  h1,
+  .title {
+    font-size: 30px;
   }
 }
