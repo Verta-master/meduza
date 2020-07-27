@@ -1253,6 +1253,44 @@ h2,
 .modal__text {
   height: 80px;
 }
+.modal__comment {
+  font-size: 16px;
+  text-align: center;
+}
+.modal__comment a {
+  text-decoration: underline;
+}
+.modal__comment a:hover,
+.modal__comment a:active {
+  text-decoration: none;
+}
+.checkbox {
+  display: none;
+}
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  color: #00a7e7;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.checkbox:checked + .checkbox-label::before {
+  content: "\2713";
+}
 .info {
   padding-top: 30px;
   color: #333;
