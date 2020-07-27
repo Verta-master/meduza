@@ -1256,6 +1256,7 @@ h2,
 .modal__comment {
   font-size: 16px;
   text-align: center;
+  line-height: 1.2;
 }
 .modal__comment a {
   text-decoration: underline;
@@ -1438,8 +1439,10 @@ blockquote {
   padding: 0;
   margin-top: 70px;
   margin-bottom: 95px;
-  padding: 22px 15px;
+  padding: 30px 40px;
   color: #333;
+  font-weight: 700;
+  line-height: 1.2;
   text-align: left;
   border: 1px solid #00a7e7;
 }
@@ -1449,12 +1452,12 @@ blockquote {
   padding: 0 40px;
   font-size: 30px;
   line-height: 1;
-  font-weight: 700;
   text-transform: uppercase;
   color: #00a7e7;
   background-color: #fff;
   white-space: nowrap;
 }
+.quote-name,
 .quote-title {
   position: absolute;
   z-index: 5;
@@ -1476,6 +1479,186 @@ blockquote {
   color: #e10613;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.quote-name {
+  display: block;
+  padding: 0 40px;
+  font-size: 30px;
+  line-height: 1;
+  color: #00a7e7;
+  background-color: #fff;
+}
+.map {
+  position: relative;
+  background-image: url(../img/images/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 867px;
+  border: 0;
+}
+.map__block {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  bottom: 30px;
+  left: 55%;
+  width: 530px;
+  padding: 10px;
+  padding-left: 60px;
+  background-color: #fff;
+}
+.map__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.map__logo strong {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+}
+.map__logo-main {
+  width: 40px;
+  margin-right: 15px;
+}
+.map__logo-name {
+  width: 175px;
+  margin-right: 30px;
+}
+.map__phones {
+  padding-left: 85px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.map__phones a {
+  display: block;
+  color: #00a7e7;
+}
+.map__phones a:hover,
+.map__phones a:active {
+  color: #e10613;
+}
+.map__field a {
+  color: #00a7e7;
+  font-weight: 700;
+}
+.map__field a:hover,
+.map__field a:active {
+  color: #e10613;
+}
+.map__app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.map__app a {
+  display: block;
+  width: 140px;
+  height: 47px;
+  margin-left: 25px;
+}
+.map__app a:hover,
+.map__app a:active {
+  background-color: #00a7e7;
+  background-image: url(../img/images/app.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 7px;
+}
+.map__app a:hover img,
+.map__app a:active img {
+  display: none;
+}
+.map__link {
+  display: block;
+  padding: 10px 0;
+  color: #00a7e7;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.map__link:hover,
+.map__link:active {
+  text-decoration: underline;
+}
+.contacts .title-2 {
+  text-align: left;
+}
+.contacts__address {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contacts__address p {
+  margin: 0;
+}
+.contacts__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.contacts__img {
+  width: 48%;
+}
+.contacts__img img {
+  display: block;
+}
+ol {
+  margin: 0;
+  padding: 0;
+  counter-reset: myCounter;
+  list-style-type: none;
+  padding-left: 60px;
+}
+ol li {
+  padding-left: 35px;
+  position: relative;
+}
+ol li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter) ".";
+  position: absolute;
+  top: 0;
+  left: 7px;
+  color: #00a7e7;
+  font-weight: 700;
+  display: inline-block;
+  text-align: left;
+}
+.contacts__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__photo blockquote {
+  width: calc(100% - 190px);
+}
+.contacts__pic {
+  width: 150px;
+}
+.contacts__pic img {
+  display: block;
 }
 @media (max-width: 1350px) {
   .wrapper {
