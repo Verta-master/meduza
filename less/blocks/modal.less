@@ -49,6 +49,51 @@
   }
 }
 
- .modal__text {
+.modal__text {
   height: 80px;
+}
+
+.modal__comment {
+  font-size: 16px;
+  text-align: center;
+  
+  a {
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  font-size: 20px;
+  line-height: 1.2;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    color: @blue;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+
+.checkbox:checked + .checkbox-label::before {
+  content: "\2713";
 }
