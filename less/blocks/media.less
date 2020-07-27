@@ -68,6 +68,11 @@
   .app__list li {
     margin-bottom: 15px;
   }
+  .map__block {
+    left: 50%;
+    width: 50%;
+    padding-left: 20px;
+  }
 }
 
 //------------------------------------------
@@ -198,6 +203,23 @@
   .info__item {
     margin-bottom: 20px;
   }
+  .map__block {
+    position: static;
+    width: 100%;
+    padding: 20px 15px;
+  }
+  .map iframe {
+    height: 400px;
+  }
+  .map {
+    background-image: none;
+  }
+  .quote-name {
+    position: static;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 //------------------------------------------
@@ -210,6 +232,7 @@
     flex-direction: column;
     text-align: center;
   }
+  .contacts__photo,
   .app__wrap {
     display: block;
   }
@@ -257,6 +280,10 @@
   }
   .info table {
     width: 730px;
+  }
+  .contacts__photo blockquote {
+    margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -320,5 +347,48 @@
   h1,
   .title {
     font-size: 30px;
+  }
+  .map__logo strong {
+    display: none;
+  }
+  .map__phones {
+    padding-left: 0;
+  }
+  .map__app {
+    display: block;
+    margin-top: 20px;
+    
+    a {
+      margin-left: 0;
+    }
+  }
+  .map__link {
+    font-size: 20px;
+  }
+  .contacts__imgs {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .contacts__img {
+    width: 100%;
+    margin-bottom: 20px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  ol {
+    padding-left: 0;
+  }
+  blockquote {
+    padding: 15px;
+  }
+  .quote-link {
+    padding: 0;
+    margin-top: 10px;
+    position: static;
+    transform: none;
   }
 }
