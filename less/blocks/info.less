@@ -1,0 +1,100 @@
+.info {
+  color: #333;
+  text-align: justify;
+  
+  table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: left;
+    
+    th,
+    td {
+      border-bottom: 1px solid rgb(162, 162, 162);
+    }
+    
+    th {
+      text-align: center;
+    }
+    
+    th:first-child,
+    td:first-child {
+      width: 75px;
+      text-align: center;
+      font-weight: 700;
+      border-right: 1px solid rgb(162, 162, 162);
+    }
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 100px;
+      text-align: center;
+      font-weight: 700;
+      border-left: 1px solid rgb(162, 162, 162);
+      border-right: 1px solid rgb(162, 162, 162);
+    }
+    th:last-child,
+    td:last-child {
+      width: 360px;
+    }
+    td:nth-child(2),
+    td:last-child {
+      padding: 20px;
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+  }
+}
+
+.info__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__img {
+  width: 43%;
+}
+
+.info__text {
+  width: 51%;
+}
+
+.info__benefits {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__item {
+  width: 30%;
+  text-align: center;
+}
+
+.info__pic {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.info__table {
+  margin-bottom: 100px;
+  
+  p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    i {
+      font-style: normal;
+    }
+    
+    span {
+      margin-left: 5px;
+      margin-right: 5px;
+      flex-grow: 1;
+      border-bottom: 2px dotted #333;
+    }
+  }
+}

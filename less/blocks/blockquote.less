@@ -1,0 +1,43 @@
+blockquote {
+  position: relative;
+  .reset();
+  margin-top: 65px;
+  margin-bottom: 90px;
+  padding: 10px;
+  color: #333;
+  font-weight: 700;
+  border: 1px solid @blue;
+}
+
+.quote-link,
+.quote-title {
+  display: block;
+  padding: 0 40px;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: @blue;
+  background-color: #fff;
+}
+
+.quote-title {
+  position: absolute;
+  z-index: 5;
+  left: 90px;
+  top: -15px;
+}
+
+.quote-link {
+  position: absolute;
+  z-index: 5;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
